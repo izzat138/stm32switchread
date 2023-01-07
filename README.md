@@ -1,9 +1,9 @@
-# stm32knightrider
-This repository documents the details of Knight Rider project on an STM32F103C8T6 MCU using STM32CubeIDE, an open-source C/C++ development platform for STM32 microcontrollers and microprocessors.
+# stm32switchread
+This repository documents the details of Reading Switch Inputs project on an STM32F103C8T6 MCU using STM32CubeIDE, an open-source C/C++ development platform for STM32 microcontrollers and microprocessors.
 
-We are required to program an STM32 MCU using open-source STM32CubeIDE in C language to implement the Knight Rider lights. A C code is included in this repository for reference.
+We are required to program an STM32 MCU using open-source STM32CubeIDE in C language to control the speed of the Knight Rider pattern using DIP switch. A C code is included in this repository for reference.
 
-stm32knightrider contains the project that use pins GPIOA-PIN0, GPIOA-PIN4, GPIOA-PIN6, GPIOA-PIN7, GPIOB-PIN0, GPIOB-PIN1, GPIOB-PIN10 and GPIOB-PIN11 to light up the LEDs with the Knight Rider pattern.
+stm32switchread contains the project that use pins GPIOA-PIN0, GPIOA-PIN4, GPIOA-PIN6, GPIOA-PIN7, GPIOB-PIN0, GPIOB-PIN1, GPIOB-PIN10 and GPIOB-PIN11 to light up the LEDs with the Knight Rider pattern. In addition, the project use pins GPIOB-PIN12, GPIOB-PIN13, GPIOB-PIN14 and GPIOB-PIN15 to control the Knight Rider Speed. Value 0000 is the slowest speed while value 1111 is the fastest. The speed will only be updated when pin GPIOB-PIN4 is low.
 
 
 
@@ -21,7 +21,10 @@ stm32knightrider contains the project that use pins GPIOA-PIN0, GPIOA-PIN4, GPIO
 
 ## Hardware Requirements
 1. Leds - 8
-2. 1k ohm resistors - 8
+2. Switch - 1
+3. DIP switch - 1 
+4. 1k ohm resistors - 13
+5. 10k ohm resistors - 4
 
 
 
@@ -56,7 +59,7 @@ stm32knightrider contains the project that use pins GPIOA-PIN0, GPIOA-PIN4, GPIO
 4. Only a section of the generated code is modified. In this project, the executing loop is added with built-in functions to blink the LED on the MCU with 0.5 seconds interval. 
 
 ![Semantic description of image](/image/pic4.png)
-
+![Semantic description of image](/image/pic7.png)
 
 <br/>
 <br/>
