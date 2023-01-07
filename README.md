@@ -56,7 +56,7 @@ stm32switchread contains the project that uses pins GPIOA-PIN0, GPIOA-PIN4, GPIO
 <br/>
 
 
-4. Only a section of the generated code is modified. In this project, the executing loop is added with built-in functions to blink the LED on the MCU with 0.5 seconds interval. 
+4. Only a section of the generated code is modified. In this project, the executing loop is added with built-in functions to light up the LEDs with the Knight Rider pattern. Also, the project includes a function to control the speed and together with a function to update the speed in a certain condition.
 
 ![Semantic description of image](/image/pic4.png)
 ![Semantic description of image](/image/pic9.png)
