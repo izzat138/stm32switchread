@@ -3,7 +3,7 @@ This repository documents the details of Reading Switch Inputs project on an STM
 
 We are required to program an STM32 MCU using open-source STM32CubeIDE in C language to control the speed of the Knight Rider pattern using DIP switch. A C code is included in this repository for reference.
 
-stm32switchread contains the project that use pins GPIOA-PIN0, GPIOA-PIN4, GPIOA-PIN6, GPIOA-PIN7, GPIOB-PIN0, GPIOB-PIN1, GPIOB-PIN10 and GPIOB-PIN11 to light up the LEDs with the Knight Rider pattern. In addition, the project use pins GPIOB-PIN12, GPIOB-PIN13, GPIOB-PIN14 and GPIOB-PIN15 to control the Knight Rider Speed. Value 0000 is the slowest speed while value 1111 is the fastest. The speed will only be updated when pin GPIOB-PIN4 is low.
+stm32switchread contains the project that uses pins GPIOA-PIN0, GPIOA-PIN4, GPIOA-PIN6, GPIOA-PIN7, GPIOB-PIN0, GPIOB-PIN1, GPIOB-PIN10 and GPIOB-PIN11 to light up the LEDs with the Knight Rider pattern. In addition, the project use pins GPIOB-PIN12, GPIOB-PIN13, GPIOB-PIN14 and GPIOB-PIN15 to control the Knight Rider Speed. Value 0000 is the slowest speed while value 1111 is the fastest. The speed will only be updated when pin GPIOB-PIN4 is low.
 
 
 
@@ -124,6 +124,10 @@ https://user-images.githubusercontent.com/106621749/203887910-23e8e2eb-df35-451b
 # Reflections
 
 This basic STM32 project creation facilitates us to understand the capabilities and utilities provided by STM32CubeIDE to program an STM32 MCU. This repository can be referred for any future project creations.
+
+It is important to check that all the electronic components are working perfectly beforehand. During the time we worked on this project, we encountered a problem where the speed is not changing. This issue was caused by the defective BCD switch which cost us quite some time to debug. Replacing the BCD switch with the new one has proven that there is something wrong with the previous BCD switch.
+
+Also, we have not taken care of the input pins properly, where we left the pins floating with no external pull-up or pull-down. This state is undetermined when floating, which causes a variety of issues.
 
 In addition, counterfeit ST-LINK is an ongoing issue being investigated by STMicroelectronics. In the recent releases of STM32CubeIDE, a counter measure is made by STMicroelectronics to prevent the programming of an STM32 MCU with a counterfeit ST-LINK. However, to overcome the difficulty of finding and owning an actual ST-LINK, STM32 ST-LINK Utility can be used to program STM32 MCU instead with a cloned ST-LINK.
 
