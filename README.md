@@ -59,7 +59,7 @@ stm32switchread contains the project that use pins GPIOA-PIN0, GPIOA-PIN4, GPIOA
 4. Only a section of the generated code is modified. In this project, the executing loop is added with built-in functions to blink the LED on the MCU with 0.5 seconds interval. 
 
 ![Semantic description of image](/image/pic4.png)
-![Semantic description of image](/image/pic7.png)
+![Semantic description of image](/image/pic9.png)
 
 <br/>
 <br/>
